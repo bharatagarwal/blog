@@ -1,2 +1,2 @@
 Posts
-- [Workflow](workflow.html)
+- [Workflow](workflow)

@@ -1,0 +1,3 @@
+#! /bin/bash
+
+sed -i '' '1s;^;<link href=basic.css rel=stylesheet>\n;' $1.html

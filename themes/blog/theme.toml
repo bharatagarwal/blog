@@ -1,0 +1,16 @@
+name = 'Blog'
+license = 'MIT'
+licenselink = 'https://github.com/owner/repo/LICENSE'
+description = 'Theme for my personal blog'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/bharatagarwal/hugo-theme'
+
+# Taxonomy terms
+tags = ['blog']
+features = ['single column', 'clean']
+
+# If the theme has a single author
+[author]
+  name = 'Bharat Agarwal'
+  homepage = 'bharatagarwal.io'

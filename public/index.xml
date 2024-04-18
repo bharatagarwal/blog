@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on </title>
+    <link>//localhost:1313/</link>
+    <description>Recent content in Home on </description>
+    <generator>Hugo 0.125.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Apr 2024 13:38:58 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Integer Representation</title>
+      <link>//localhost:1313/posts/integer-representation/</link>
+      <pubDate>Thu, 18 Apr 2024 13:38:58 +0000</pubDate>
+      <guid>//localhost:1313/posts/integer-representation/</guid>
+      <description>Adder diagram&#xA;Grade school mathematics&#xA;Unsigned integers and their overflows&#xA;Signed &amp;ndash; signed, one&amp;rsquo;s, bias&#xA;Different flow diagrams&#xA;Detection via carry-in and carry-out</description>
+    </item>
+    <item>
+      <title>How to slay interviews and not be slain by them.</title>
+      <link>//localhost:1313/posts/slay-interviews/</link>
+      <pubDate>Thu, 18 Apr 2024 11:55:47 +0000</pubDate>
+      <guid>//localhost:1313/posts/slay-interviews/</guid>
+      <description>Even though you might have your issues with whiteboard/ds-algo interviews, they are inevitable.&#xA;The only way out is through the belly of the beast, so cry havoc and let slip the dogs of whiteboard.&#xA;Interviewing: is distinct from being a good engineer&#xA;is learnable &amp;ndash; no one starts off being amazing&#xA;requires special knowledge &amp;ndash; you will fail most interviews if you haven&amp;rsquo;t learned the material sufficiently&#xA;required practice &amp;ndash; several months typically</description>
+    </item>
+    <item>
+      <title>Post 3</title>
+      <link>//localhost:1313/posts/post-3/</link>
+      <pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate>
+      <guid>//localhost:1313/posts/post-3/</guid>
+      <description>Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum.</description>
+    </item>
+    <item>
+      <title>Post 2</title>
+      <link>//localhost:1313/posts/post-2/</link>
+      <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
+      <guid>//localhost:1313/posts/post-2/</guid>
+      <description>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&#xA;Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia.</description>
+    </item>
+    <item>
+      <title>Post 1</title>
+      <link>//localhost:1313/posts/post-1/</link>
+      <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
+      <guid>//localhost:1313/posts/post-1/</guid>
+      <description>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&#xA;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea.</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>//localhost:1313/pages/about/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/pages/about/</guid>
+      <description>I&amp;rsquo;m a Software Engineer based in Bangalore, India.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/abbr-translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/abbr-translation/</guid>
+      <description>LLDB abbreviation translation Abbreviation Full form attach _regexp-attach b _regexp-break bt _regexp-bt display _regexp-display down _regexp-down env _regexp-env jump _regexp-jump list _regexp-list tbreak _regexp-tbreak undisplay _regexp-undisplay up _regexp-up rbreak breakpoint set -r %1 dis disassemble call expression &amp;ndash; p expression &amp;ndash; po expression -O &amp;ndash; poarray expression -O -Z %1 &amp;ndash; parray expression -Z %1 &amp;ndash; f frame select var frame variable x memory read shell platform shell -h &amp;ndash; c process continue continue process continue detach process detach kill process kill r process launch -c /bin/bash &amp;ndash; exit quit q quit re register history session history file target create image target modules add-dsym target symbols add t thread select sif thread step-in -e block -t %1 step thread step-in si thread step-inst ni thread step-inst-over finish thread step-out next thread step-over </description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/general-tips-assembly/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/general-tips-assembly/</guid>
+      <description>learn both syntaxes&#xA;start with bartlett pick up nasm docs&#xA;have arguments, clobbered, unclobbered in hand clobbered and unclobbered as an alternative to caller and callee saved</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/goller-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/goller-notes/</guid>
+      <description>How to slay interviews and not be slain by them Even though you might have your issues with whiteboard/ds-algo interviews, they are inevitable.&#xA;The only way out is through the belly of the beast, so cry havoc and let slip the dogs of whiteboard.&#xA;Interviewing: is distinct from being a good engineer&#xA;is learnable &amp;ndash; no one starts off being amazing&#xA;requires special knowledge &amp;ndash; you will fail most interviews if you haven&amp;rsquo;t learned the material sufficiently</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/lea-vs-mov/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/lea-vs-mov/</guid>
+      <description>The dilemma In x86/64 assembly intel syntax, for a long time, I&amp;rsquo;ve been confused between the load effective address (lea) and move (mov) instructions.&#xA;I&amp;rsquo;ve been imagining was that LEA has been doing some magic, taking contextual decisions based on whether the values inside the square bracket are addresses or naive values. This seemed counter-intuitive, seeing as assembly is supposed to be simpler than most languages.&#xA;An example Say, you have the value 0xffffffa in rax.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/lldb-abbr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/lldb-abbr/</guid>
+      <description>LLDB Abbreviations Command Description add-dsym Add a debug symbol file to one of the target&amp;rsquo;s current modules by specifying a path to a debug symbols file or by using the options to specify a module. attach Attach to process by ID or name. b Set a breakpoint using one of several shorthand formats. bt Show the current thread&amp;rsquo;s call stack. Any numeric argument displays at most that many frames. The argument &amp;lsquo;all&amp;rsquo; displays all threads.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/lldb-cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/lldb-cheatsheet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/lldb-help/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/lldb-help/</guid>
+      <description>LLDB Commands Command Description apropos List debugger commands related to a word or subject. breakpoint Commands for operating on breakpoints (see &amp;lsquo;help b&amp;rsquo; for shorthand.) command Commands for managing custom LLDB commands. disassemble Disassemble specified instructions in the current target. Defaults to the current function for the current thread and stack frame. expression Evaluate an expression on the current thread. Displays any returned value with LLDB&amp;rsquo;s default formatting. frame Commands for selecting and examing the current thread&amp;rsquo;s stack frames.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/math/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/math/</guid>
+      <description>I&amp;rsquo;ve always been a little scared of mathematical notations. They feel like symbols from an alien intelligence that is smarter than human.&#xA;Every time I see a summation formula, I feel dumb. I&amp;rsquo;ve been trying to study data structures and algorithms as an academic topic, something that can stimulate the mind. To do that, things have come to a head &amp;ndash; either I learn to be comfortable speaking mathematically, or I&amp;rsquo;m forever in the &amp;lsquo;do this to get a job and it&#39;s enough&amp;rsquo; camp.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/mem-read/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/mem-read/</guid>
+      <description>You have to initialise mem read with an address.&#xA;mem read --size 1 --num-per-line 1 --format x --count 20 Subsequent calls to mem read without specifying an address will keep moving forward, based on the count of the previous mem read.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/my-over-the-top-work-setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/my-over-the-top-work-setup/</guid>
+      <description>Something something about space complexity</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/pass-by-value-reference-assembly/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/pass-by-value-reference-assembly/</guid>
+      <description>64 bits, and what can fit inside Samples, and seeing the data types that can fit in registers, and what fit inside memory</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/summation-fib-proofs-use-cases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/summation-fib-proofs-use-cases/</guid>
+      <description>prove the summation formula odd, even, then generalise prove the fib closed-form soln&#xA;explore alex kantorovich conversation about LEAN, and what it means to learn proofs via programming</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/worse-is-better/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/worse-is-better/</guid>
+      <description>write your thoughts on this article:&#xA;https://www.jwz.org/doc/worse-is-better.html</description>
+    </item>
+  </channel>
+</rss>

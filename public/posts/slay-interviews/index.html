@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title>How to slay interviews and not be slain by them. | </title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1></h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">Posts</a>
+    </li>
+    <li>
+      <a href="/pages/about/">About me</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  </header>
+  <main>
+    
+<article>
+  <header>
+    <h1>How to slay interviews and not be slain by them.</h1>
+
+    
+    
+    <time datetime="2024-04-18T11:55:47&#43;00:00">April 18, 2024</time>
+  </header>
+  <p>Even though you might have your issues with whiteboard/ds-algo interviews, they are inevitable.</p>
+<blockquote>
+<p>The only way out is through the belly of the beast, so cry havoc and let slip the dogs of whiteboard.</p>
+</blockquote>
+<h2 id="interviewing">Interviewing:</h2>
+<ul>
+<li>
+<p>is distinct from being a good engineer</p>
+</li>
+<li>
+<p>is learnable &ndash; no one starts off being amazing</p>
+</li>
+<li>
+<p>requires special knowledge &ndash; you will fail most interviews if you haven&rsquo;t learned the material sufficiently</p>
+</li>
+<li>
+<p>required practice &ndash; several months typically</p>
+</li>
+<li>
+<p>will be uncomfortable &ndash; confront discomfort head on</p>
+</li>
+<li>
+<p>Failing is a rite of passage</p>
+</li>
+<li>
+<p>Interviewers typically expect you to fail &ndash; it&rsquo;s just statistically likely</p>
+</li>
+</ul>
+<h2 id="prep">Prep</h2>
+<ul>
+<li>Read Algorithm Design Manual
+<ul>
+<li>Watch lectures</li>
+</ul>
+</li>
+<li>130 leetcode problems (mostly medium), 5-10 programming contests, handful of random problems</li>
+</ul>
+<p>Usually takes 2-3 months</p>
+<ul>
+<li>Leverage mocks to combat stage fright</li>
+<li>Set a timer when solving problems &ndash; 45 minutes
+<ul>
+<li>Practice until you&rsquo;re able to solve most problems in this timeframe.</li>
+</ul>
+</li>
+<li>Try coding contests that have a multi-hour window to solve 3-4
+<ul>
+<li>helps prioritisation and working under pressure</li>
+</ul>
+</li>
+</ul>
+<h2 id="programming-language">Programming Language</h2>
+<p>Choose most comfortable.</p>
+<ul>
+<li>Review other people&rsquo;s solutions in chosen language
+<ul>
+<li>Great way to learn tricks / features</li>
+</ul>
+</li>
+<li>Get comfortable with collections if using Python</li>
+<li>Be comfortable with stdlib efficiencies</li>
+<li>Check for common interview questions in language</li>
+</ul>
+<h2 id="scheduling-interviews">Scheduling interviews</h2>
+<ul>
+<li>
+<p>Start with company you&rsquo;d say no to, end with company you&rsquo;d say yes to</p>
+<ul>
+<li>Will help to have competing offers in hand</li>
+</ul>
+</li>
+<li>
+<p>Once you&rsquo;re negotiating salaries, if you&rsquo;ve been accepted, they&rsquo;ve already spent a lot of money on you, and it will take a lot of money to find someone else. So ask for a little bit more.</p>
+</li>
+</ul>
+<h2 id="super-heuristic">Super Heuristic</h2>
+<ul>
+<li>
+<p><strong>S</strong>tate the problem</p>
+<ul>
+<li>What am I solving exactly?</li>
+<li>Input, Output</li>
+<li>Constraints?</li>
+<li>Expected performance</li>
+</ul>
+</li>
+<li>
+<p><strong>U</strong>nderstand the problem</p>
+<ul>
+<li>Play with the problem</li>
+<li>Draw a picture</li>
+<li>Cases
+<ul>
+<li>Null/Empty</li>
+</ul>
+</li>
+<li>Boiled down to common problem type</li>
+<li>Obvious data structure or algorithm
+<ul>
+<li>Linked Lists: Do I need to dereference current item to get to the next one</li>
+<li>Array with two pointers / sliding window: is having two indexes or a region of input helpful</li>
+<li>Stack: LIFO?</li>
+<li>Queue: FIFO?</li>
+<li>Trees: Parent/child relationship? Can I exclude have of the input at each step?</li>
+<li>Graphs: Nodes? Edges? Directed? Cyclic? Weighted?</li>
+<li>Backtracking - Show I try every possible answer?</li>
+<li>Dynamic: Are bigger cases a combination of smaller cases?
+<ul>
+<li>Find minimum no of ways</li>
+<li>Find longest of many</li>
+</ul>
+</li>
+<li>Recursion: Base case?</li>
+<li>Math: Is there a simple equation?</li>
+<li>Sorting: Does ordering simplify problem?</li>
+<li>Binary: Can binary operations simplify state mutation?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>P</strong>lan your approach</p>
+<ul>
+<li>Plain language list of steps</li>
+<li>Talk about performance</li>
+<li>Try a few normal cases with plain language procedure</li>
+<li>Consider common edge cases
+<ul>
+<li>Ask if you&rsquo;ve missed an edge case</li>
+<li>How could your approach fail</li>
+<li>Data structure
+<ul>
+<li>is huge: 10^9 nodes, elements etc</li>
+<li>has identical elements</li>
+<li>Can&rsquo;t fit memory</li>
+<li>has a single element, node, possible value</li>
+<li>is empty</li>
+</ul>
+</li>
+<li>Linked Lists: contain a cycle</li>
+<li>Collections
+<ul>
+<li>heterogenous types</li>
+<li>methods are called a lot</li>
+<li>invalid index</li>
+</ul>
+</li>
+<li>Trees:
+<ul>
+<li>full</li>
+<li>lopsided</li>
+</ul>
+</li>
+<li>Graphs:
+<ul>
+<li>cycles</li>
+<li>disjoint</li>
+<li>all weights are 0, huge, negative</li>
+</ul>
+</li>
+<li>Backtrack:
+<ul>
+<li>No solution exists</li>
+<li>Correct solution will be first/last tried</li>
+</ul>
+</li>
+<li>Recursion:
+<ul>
+<li>Exceeds max depth</li>
+<li>Base case never math</li>
+</ul>
+</li>
+<li>Math: Division by zero?</li>
+<li>Sorting: Already sorted?</li>
+<li>Binary: Every bit is set/unset</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>E</strong>xecute your approach</p>
+<ul>
+<li>Check with interviewer</li>
+<li>Start with ugly-but-working code</li>
+<li>Remove unnecessary parts</li>
+<li>Stub and compose
+<ul>
+<li>comments</li>
+<li>write tests</li>
+<li>then implement</li>
+<li>make small functions, and invoke inside main
+<ul>
+<li>enables quick assertions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Structured logging
+<ul>
+<li>Have a format ready</li>
+<li>Identify a library that will do this</li>
+</ul>
+</li>
+<li>Use a debugger</li>
+</ul>
+</li>
+<li>
+<p><strong>R</strong>eview your answer</p>
+<ul>
+<li>Ask aloud
+<ul>
+<li>How could approach be improved</li>
+<li>Edge cases</li>
+<li>Performance double-check</li>
+</ul>
+</li>
+<li>Are you reinventing the wheel?</li>
+</ul>
+</li>
+</ul>
+<h2 id="logging">Logging</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> logging
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>FORMAT <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[</span><span style="color:#e6db74">%(filename)s</span><span style="color:#e6db74">:</span><span style="color:#e6db74">%(lineno)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(funcName)10s</span><span style="color:#e6db74">() ] </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>basicConfig(format<span style="color:#f92672">=</span>FORMAT, level<span style="color:#f92672">=</span>logging<span style="color:#f92672">.</span>WARN)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(__name__)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">some_test_function</span>():
+</span></span><span style="display:flex;"><span>  logger<span style="color:#f92672">.</span>warning(<span style="color:#e6db74">&#34;This is a test message&#34;</span>)
+</span></span><span style="display:flex;"><span>some_test_function()
+</span></span></code></pre></div><p>will output:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>[test.py:8 - some_test_function() ] This is a test message
+</span></span></code></pre></div><h2 id="misc-advice">Misc advice:</h2>
+<ul>
+<li>Politely ask to get straight to the question after 5 minutes</li>
+<li>Be prepared for followup questions
+<ul>
+<li>Get a feel for this with interviewers</li>
+</ul>
+</li>
+<li>Treat interviews like someone you&rsquo;re tutoring
+<ul>
+<li>Say meaningful things &ndash; better to be quiet than make noise</li>
+<li>Stub out boring parts with a <code>tokenize()</code> or <code>validate()</code> function</li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+
+  </main>
+  <footer>
+    
+
+  </footer>
+</body>
+</html>

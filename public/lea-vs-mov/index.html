@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title> | </title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1></h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/posts/">Posts</a>
+    </li>
+    <li>
+      <a href="/about/">About me</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  </header>
+  <main>
+    
+<article>
+  <header>
+    <h1></h1>
+
+    
+    
+    <time datetime="0001-01-01T00:00:00&#43;00:00">January 1, 1</time>
+  </header>
+  <h2 id="the-dilemma">The dilemma</h2>
+<p>In x86/64 assembly intel syntax, for a long time, I&rsquo;ve been confused between the load effective address (<code>lea</code>) and move (<code>mov</code>) instructions.</p>
+<p>I&rsquo;ve been imagining was that <code>LEA</code> has been doing some magic, taking contextual decisions based on whether the values inside the square bracket are addresses or naive values. This seemed counter-intuitive, seeing as assembly is supposed to be simpler than most languages.</p>
+<h2 id="an-example">An example</h2>
+<p>Say, you have the value <code>0xffffffa</code> in <code>rax</code>.</p>
+<p>How do the following two instructions differ:</p>
+<pre tabindex="0"><code>mov rdi, [rax]
+lea rdi, [rax]
+</code></pre><h3 id="mov-rdi-rax">mov rdi, [rax]</h3>
+<p>This is equivalent to,</p>
+<pre tabindex="0"><code>rdi = *rax
+</code></pre><h3 id="lea-rdi-rax">lea rdi, [rax]</h3>
+<p>This is equivalent to,</p>
+<pre tabindex="0"><code>rdi = rax
+</code></pre><p>Now, the square brackets notation, <code>[]</code> indicates that the operand is an address.</p>
+<p>We can do things like,</p>
+<pre tabindex="0"><code>[rax + rdx]
+[rax + 4*rdx]
+[rax + 4*rdx + 5]
+</code></pre><p>Whatever the computation, the meaning of rax and rdx does not change, whether we&rsquo;re doing this for <code>lea</code> or <code>mov</code></p>
+<p>Some rascally developers might contract the following operations</p>
+<pre tabindex="0"><code>add rax, rdx
+mul rax, 4
+add rax, 5
+add rax, rcx
+</code></pre><p>into something like this</p>
+<pre tabindex="0"><code>lea rax, [rcx + 4 * rdx + 5]
+</code></pre><p>Thereby reducing the number of fetch, decode, execute steps. Furthermore, the fact that it follows a pattern of</p>
+<pre tabindex="0"><code>a + 2^b * c + d
+</code></pre><p>enables it to have a more specific path than those individual circuits.</p>
+<p>The fact that lea has its own circuitry means that it can be run in parallel with integer circuitry.</p>
+<h2 id="the-logic-still-stands">The logic still stands</h2>
+<p>Even though we&rsquo;re gaining all of these advantages, at its root, the lea instruction is computing a value, and storing that value in a register. The mechanism was designed for computing values, but there&rsquo;s no sense of a &rsquo;type&rsquo; here. Any value computed inside the square brackets is considered an address, and lea simply stores that value &ndash; it loads the effective &lsquo;address&rsquo; in the source operand.</p>
+
+</article>
+
+
+  </main>
+  <footer>
+    
+
+  </footer>
+</body>
+</html>

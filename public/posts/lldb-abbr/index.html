@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-us" >
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title> | </title>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+
+      <script src="/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <h1></h1>
+
+  <nav>
+    <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a aria-current="true" class="ancestor" href="/posts/">Posts</a>
+    </li>
+    <li>
+      <a href="/pages/about/">About me</a>
+    </li>
+    </ul>
+  </nav>
+
+
+  </header>
+  <main>
+    
+<article>
+  <header>
+    <h1></h1>
+
+    
+    
+    <time datetime="0001-01-01T00:00:00&#43;00:00">January 1, 1</time>
+  </header>
+  <h1 id="lldb-abbreviations">LLDB Abbreviations</h1>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add-dsym</td>
+<td>Add a debug symbol file to one of the target&rsquo;s current modules by specifying a path to a debug symbols file or by using the options to specify a module.</td>
+</tr>
+<tr>
+<td>attach</td>
+<td>Attach to process by ID or name.</td>
+</tr>
+<tr>
+<td>b</td>
+<td>Set a breakpoint using one of several shorthand formats.</td>
+</tr>
+<tr>
+<td>bt</td>
+<td>Show the current thread&rsquo;s call stack. Any numeric argument displays at most that many frames. The argument &lsquo;all&rsquo; displays all threads.</td>
+</tr>
+<tr>
+<td>c</td>
+<td>Continue execution of all threads in the current process.</td>
+</tr>
+<tr>
+<td>call</td>
+<td>Evaluate an expression on the current thread. Displays any returned value with LLDB&rsquo;s default formatting.</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>Continue execution of all threads in the current process.</td>
+</tr>
+<tr>
+<td>detach</td>
+<td>Detach from the current target process.</td>
+</tr>
+<tr>
+<td>di / dis</td>
+<td>Disassemble specified instructions in the current target. Defaults to the current function for the current thread and stack frame.</td>
+</tr>
+<tr>
+<td>display</td>
+<td>Evaluate an expression at every stop (see &lsquo;help target stop-hook&rsquo;.)</td>
+</tr>
+<tr>
+<td>down</td>
+<td>Select a newer stack frame. Defaults to moving one frame, a numeric argument can specify an arbitrary number.</td>
+</tr>
+<tr>
+<td>env</td>
+<td>Shorthand for viewing and setting environment variables.</td>
+</tr>
+<tr>
+<td>exit</td>
+<td>Quit the LLDB debugger.</td>
+</tr>
+<tr>
+<td>f</td>
+<td>Select the current stack frame by index from within the current thread (see &rsquo;thread backtrace&rsquo;.)</td>
+</tr>
+<tr>
+<td>file</td>
+<td>Create a target using the argument as the main executable.</td>
+</tr>
+<tr>
+<td>finish</td>
+<td>Finish executing the current stack frame and stop after returning. Defaults to current thread unless specified.</td>
+</tr>
+<tr>
+<td>history</td>
+<td>Dump the history of commands in this session. Commands in the history list can be run again using &ldquo;!<!-- raw HTML omitted -->&rdquo;. &ldquo;!-<!-- raw HTML omitted -->&rdquo; will re-run the command that is <!-- raw HTML omitted --> commands from the end of the list (counting the current command).</td>
+</tr>
+<tr>
+<td>image</td>
+<td>Commands for accessing information for one or more target modules.</td>
+</tr>
+<tr>
+<td>j / jump</td>
+<td>Set the program counter to a new address.</td>
+</tr>
+<tr>
+<td>kill</td>
+<td>Terminate the current target process.</td>
+</tr>
+<tr>
+<td>l / list</td>
+<td>List relevant source code using one of several shorthand formats.</td>
+</tr>
+<tr>
+<td>n / next</td>
+<td>Source level single step, stepping over calls. Defaults to current thread unless specified.</td>
+</tr>
+<tr>
+<td>nexti / ni</td>
+<td>Instruction level single step, stepping over calls. Defaults to current thread unless specified.</td>
+</tr>
+<tr>
+<td>p</td>
+<td>Print a variable or expression.</td>
+</tr>
+<tr>
+<td>parray</td>
+<td>parray <!-- raw HTML omitted --> <!-- raw HTML omitted --> &ndash; lldb will evaluate EXPRESSION to get a typed-pointer-to-an-array in memory, and will display COUNT elements of that type from the array.</td>
+</tr>
+<tr>
+<td>po</td>
+<td>Evaluate an expression on the current thread. Displays any returned value with formatting controlled by the type&rsquo;s author.</td>
+</tr>
+<tr>
+<td>poarray</td>
+<td>poarray <!-- raw HTML omitted --> <!-- raw HTML omitted --> &ndash; lldb will evaluate EXPRESSION to get the address of an array of COUNT objects in memory, and will call po on them.</td>
+</tr>
+<tr>
+<td>print</td>
+<td>Print a variable or expression.</td>
+</tr>
+<tr>
+<td>q</td>
+<td>Quit the LLDB debugger.</td>
+</tr>
+<tr>
+<td>r</td>
+<td>Launch the executable in the debugger.</td>
+</tr>
+<tr>
+<td>rbreak</td>
+<td>Sets a breakpoint or set of breakpoints in the executable.</td>
+</tr>
+<tr>
+<td>re</td>
+<td>Commands to access registers for the current thread and stack frame.</td>
+</tr>
+<tr>
+<td>repl</td>
+<td>Evaluate an expression on the current thread. Displays any returned value with LLDB&rsquo;s default formatting.</td>
+</tr>
+<tr>
+<td>run</td>
+<td>Launch the executable in the debugger.</td>
+</tr>
+<tr>
+<td>s</td>
+<td>Source level single step, stepping into calls. Defaults to current thread unless specified.</td>
+</tr>
+<tr>
+<td>shell</td>
+<td>Run a shell command on the host.</td>
+</tr>
+<tr>
+<td>si</td>
+<td>Instruction level single step, stepping into calls. Defaults to current thread unless specified.</td>
+</tr>
+<tr>
+<td>sif</td>
+<td>Step through the current block, stopping if you step directly into a function whose name matches the TargetFunctionName.</td>
+</tr>
+<tr>
+<td>step</td>
+<td>Source level single step, stepping into calls. Defaults to current thread unless specified.</td>
+</tr>
+<tr>
+<td>stepi</td>
+<td>Instruction level single step, stepping into calls. Defaults to current thread unless specified.</td>
+</tr>
+<tr>
+<td>t</td>
+<td>Change the currently selected thread.</td>
+</tr>
+<tr>
+<td>tbreak</td>
+<td>Set a one-shot breakpoint using one of several shorthand formats.</td>
+</tr>
+<tr>
+<td>undisplay</td>
+<td>Stop displaying expression at every stop (specified by stop-hook index.)</td>
+</tr>
+<tr>
+<td>up</td>
+<td>Select an older stack frame. Defaults to moving one frame, a numeric argument can specify an arbitrary number.</td>
+</tr>
+<tr>
+<td>v / var / vo</td>
+<td>Show variables for the current stack frame. Defaults to all arguments and local variables in scope. Names of argument, local, file static and file global variables can be specified.</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Read from the memory of the current target process.</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+
+
+  </main>
+  <footer>
+    
+
+  </footer>
+</body>
+</html>

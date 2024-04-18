@@ -1,4 +1,10 @@
-# LLDB abbreviation translation
+---
+title: LLDB abbreviation translations
+date: 2024-04-18T15:00:43.138Z
+description: A reference for future me
+slug: lldb-abbr-trans
+draft: false
+---
 | Abbreviation | Full form | 
 |-|-|
 | attach | _regexp-attach |

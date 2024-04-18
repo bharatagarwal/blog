@@ -4,8 +4,11 @@
 	<meta name="generator" content="Hugo 0.125.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-
-
+<link rel="stylesheet" href="/css/main.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+ </style>
 <title></title>
 
     <link rel="stylesheet" href="/css/main.css">
@@ -19,34 +22,179 @@
   <header>
     <h1></h1>
 
-  <nav>
-    <ul>
-    <li>
-      <a aria-current="page" class="active" href="/">Home</a>
-    </li>
-    <li>
-      <a href="/posts/">Posts</a>
-    </li>
-    <li>
-      <a href="/pages/about/">About me</a>
-    </li>
-    </ul>
-  </nav>
 
 
   </header>
   <main>
     
-  <h1>Welcome to My Blog</h1>
+  <h1>Blog</h1>
   
     <article>
-      <h2><a href="/posts/">Posts</a></h2>
-      <p>Tempor est exercitation ad qui pariatur quis adipisicing aliquip nisi ea consequat ipsum occaecat. Nostrud consequat ullamco laboris fugiat esse esse adipisicing velit laborum ipsum incididunt ut enim. Dolor pariatur nulla quis fugiat dolore excepteur. Aliquip ad quis aliqua enim do consequat.</p>
+      <h2><a href="/general-tips-assembly/">General tips for learning assembly</a></h2>
+      <div style="opacity: 0.6"><p>learn both syntaxes</p>
+<p>start with bartlett
+pick up nasm docs</p>
+<p>have arguments, clobbered, unclobbered in hand
+clobbered and unclobbered as an alternative to caller and callee saved</p>
+      <a href="/general-tips-assembly/"><br>read more...</a></div>
+
     </article>
   
     <article>
-      <h2><a href="/pages/">Pages</a></h2>
-      <p></p>
+      <h2><a href="/lea-vs-mov/">lea v/s mov in x86 Assembly</a></h2>
+      <div style="opacity: 0.6"><h2 id="the-dilemma">The dilemma</h2>
+<p>In x86/64 assembly intel syntax, for a long time, I&rsquo;ve been confused between the load effective address (<code>lea</code>) and move (<code>mov</code>) instructions.</p>
+<p>I&rsquo;ve been imagining was that <code>LEA</code> has …</p>      <a href="/lea-vs-mov/"><br>read more...</a></div>
+
+    </article>
+  
+    <article>
+      <h2><a href="/lldb-abbr-ref/">LLDB abbreviation reference</a></h2>
+      <div style="opacity: 0.6"><table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add-dsym</td>
+<td>Add a debug symbol file to one of the target&rsquo;s current modules by specifying a path to a debug symbols file or by using the options to specify a module. …</td></tr></tbody></table>      <a href="/lldb-abbr-ref/"><br>read more...</a></div>
+
+    </article>
+  
+    <article>
+      <h2><a href="/lldb-command-reference/">LLDB command reference</a></h2>
+      <div style="opacity: 0.6"><table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>apropos</td>
+<td>List debugger commands related to a word or subject.</td>
+</tr>
+<tr>
+<td>breakpoint</td>
+<td>Commands for operating on breakpoints (see &lsquo;help b&rsquo; for shorthand.)</td>
+</tr>
+<tr>
+<td>command</td>
+<td>Commands …</td></tr></tbody></table>      <a href="/lldb-command-reference/"><br>read more...</a></div>
+
+    </article>
+  
+    <article>
+      <h2><a href="/math/">Math and me</a></h2>
+      <div style="opacity: 0.6"><p>I&rsquo;ve always been a little scared of mathematical notations. They feel like symbols from an alien intelligence that is smarter than human.</p>
+<p>Every time I see a summation formula, I feel dumb. …</p>      <a href="/math/"><br>read more...</a></div>
+
+    </article>
+  
+    <article>
+      <h2><a href="/mem-read/">Mem read in x86 Assembly</a></h2>
+      <div style="opacity: 0.6"><p>You have to initialise mem read with an address.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mem read --size 1 --num-per-line 1 --format x --count 20
+</span></span></code></pre></div><p>Subsequent calls to mem read without specifying an address will keep moving forward, based on …</p>      <a href="/mem-read/"><br>read more...</a></div>
+
+    </article>
+  
+    <article>
+      <h2><a href="/pass-by-value-reference-assembly/">Pass-by-reference and pass-by-value in x86 Assembly</a></h2>
+      <div style="opacity: 0.6"><p>64 bits, and what can fit inside
+Samples, and seeing the data types that can fit in registers, and what fit inside memory</p>
+      <a href="/pass-by-value-reference-assembly/"><br>read more...</a></div>
+
+    </article>
+  
+    <article>
+      <h2><a href="/summation-fib-proofs-use-cases/">Proof of the summation formula for first n integers</a></h2>
+      <div style="opacity: 0.6"><h2 id="prove-the-summation-formula">prove the summation formula</h2>
+<pre><code>odd, even, then generalise
+</code></pre>
+<p>prove the fib closed-form soln</p>
+<p>explore alex kantorovich conversation about LEAN, and what it means to learn proofs via programming</p>
+      <a href="/summation-fib-proofs-use-cases/"><br>read more...</a></div>
+
+    </article>
+  
+    <article>
+      <h2><a href="/worse-is-better/">My thoughts on the Rise of Worse is Better</a></h2>
+      <div style="opacity: 0.6"><p>write your thoughts on this article:</p>
+<p><a href="https://www.jwz.org/doc/worse-is-better.html">https://www.jwz.org/doc/worse-is-better.html</a></p>
+      <a href="/worse-is-better/"><br>read more...</a></div>
+
+    </article>
+  
+    <article>
+      <h2><a href="/lldb-abbr-trans/">LLDB abbreviation translations</a></h2>
+      <div style="opacity: 0.6"><table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Full form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>attach</td>
+<td>_regexp-attach</td>
+</tr>
+<tr>
+<td>b</td>
+<td>_regexp-break</td>
+</tr>
+<tr>
+<td>bt</td>
+<td>_regexp-bt</td>
+</tr>
+<tr>
+<td>display</td>
+<td>_regexp-display</td>
+</tr>
+<tr>
+<td>down</td>
+<td>_regexp-down</td>
+</tr>
+<tr>
+<td>env</td>
+<td>_regexp-env</td>
+</tr>
+<tr>
+<td>jump</td>
+<td>_regexp-jump</td>
+</tr>
+<tr>
+<td>list</td>
+<td>_regexp-list</td>
+</tr>
+<tr>
+<td>tbreak …</td></tr></tbody></table>      <a href="/lldb-abbr-trans/"><br>read more...</a></div>
+
+    </article>
+  
+    <article>
+      <h2><a href="/integer-representation/">Integer Representation</a></h2>
+      <div style="opacity: 0.6"><p>Adder diagram</p>
+<p>Grade school mathematics</p>
+<p>Unsigned integers and their overflows</p>
+<p>Signed &ndash; signed, one&rsquo;s, bias</p>
+<p>Different flow diagrams</p>
+<p>Detection via carry-in and carry-out</p>
+      <a href="/integer-representation/"><br>read more...</a></div>
+
+    </article>
+  
+    <article>
+      <h2><a href="/slay-interviews/">How to slay interviews and not be slain by them.</a></h2>
+      <div style="opacity: 0.6"><p>Even though you might have your issues with whiteboard/ds-algo interviews, they are inevitable.</p>
+<blockquote>
+<p>The only way out is through the belly of the beast, so cry havoc and let slip the dogs of whiteboard. …</p></blockquote>      <a href="/slay-interviews/"><br>read more...</a></div>
+
     </article>
   
 

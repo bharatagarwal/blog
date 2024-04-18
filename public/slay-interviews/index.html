@@ -3,9 +3,12 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-
-
-<title> | </title>
+<link rel="stylesheet" href="/css/main.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+ </style>
+<title>How to slay interviews and not be slain by them. | </title>
 
     <link rel="stylesheet" href="/css/main.css">
 
@@ -25,14 +28,13 @@
     
 <article>
   <header>
-    <h1></h1>
+    <h1>How to slay interviews and not be slain by them.</h1>
 
     
     
-    <time datetime="0001-01-01T00:00:00&#43;00:00">January 1, 1</time>
+    <time datetime="2024-04-18T11:55:47&#43;00:00">April 18, 2024</time>
   </header>
-  <h1 id="how-to-slay-interviews-and-not-be-slain-by-them">How to slay interviews and not be slain by them</h1>
-<p>Even though you might have your issues with whiteboard/ds-algo interviews, they are inevitable.</p>
+  <p>Even though you might have your issues with whiteboard/ds-algo interviews, they are inevitable.</p>
 <blockquote>
 <p>The only way out is through the belly of the beast, so cry havoc and let slip the dogs of whiteboard.</p>
 </blockquote>
@@ -253,19 +255,19 @@
 </li>
 </ul>
 <h2 id="logging">Logging</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> logging
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python3" data-lang="python3"><span style="display:flex;"><span><span style="color:#a90d91">import</span> <span style="color:#000">logging</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>FORMAT <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;[</span><span style="color:#e6db74">%(filename)s</span><span style="color:#e6db74">:</span><span style="color:#e6db74">%(lineno)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(funcName)10s</span><span style="color:#e6db74">() ] </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">FORMAT</span> <span style="color:#000">=</span> <span style="color:#c41a16">&#34;[</span><span style="color:#c41a16">%(filename)s</span><span style="color:#c41a16">:</span><span style="color:#c41a16">%(lineno)s</span><span style="color:#c41a16"> - </span><span style="color:#c41a16">%(funcName)10s</span><span style="color:#c41a16">() ] </span><span style="color:#c41a16">%(message)s</span><span style="color:#c41a16">&#34;</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>basicConfig(format<span style="color:#f92672">=</span>FORMAT, level<span style="color:#f92672">=</span>logging<span style="color:#f92672">.</span>WARN)
+</span></span><span style="display:flex;"><span><span style="color:#000">logging</span><span style="color:#000">.</span><span style="color:#000">basicConfig</span>(<span style="color:#a90d91">format</span><span style="color:#000">=</span><span style="color:#000">FORMAT</span>, <span style="color:#000">level</span><span style="color:#000">=</span><span style="color:#000">logging</span><span style="color:#000">.</span><span style="color:#000">WARN</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(__name__)
+</span></span><span style="display:flex;"><span><span style="color:#000">logger</span> <span style="color:#000">=</span> <span style="color:#000">logging</span><span style="color:#000">.</span><span style="color:#000">getLogger</span>(<span style="color:#000">__name__</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">some_test_function</span>():
-</span></span><span style="display:flex;"><span>  logger<span style="color:#f92672">.</span>warning(<span style="color:#e6db74">&#34;This is a test message&#34;</span>)
-</span></span><span style="display:flex;"><span>some_test_function()
+</span></span><span style="display:flex;"><span><span style="color:#a90d91">def</span> <span style="color:#000">some_test_function</span>():
+</span></span><span style="display:flex;"><span>  <span style="color:#000">logger</span><span style="color:#000">.</span><span style="color:#000">warning</span>(<span style="color:#c41a16">&#34;This is a test message&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#000">some_test_function</span>()
 </span></span></code></pre></div><p>will output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>[test.py:8 - some_test_function() ] This is a test message
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[test.py:8 - some_test_function() ] This is a test message
 </span></span></code></pre></div><h2 id="misc-advice">Misc advice:</h2>
 <ul>
 <li>Politely ask to get straight to the question after 5 minutes</li>

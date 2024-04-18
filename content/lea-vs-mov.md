@@ -1,3 +1,9 @@
+---
+title: lea v/s mov in x86 Assembly
+date: 2024-04-18T15:10:46.293Z
+draft: false
+slug: lea-vs-mov
+---
 ## The dilemma
 
 In x86/64 assembly intel syntax, for a long time, I've been confused between the load effective address (`lea`) and move (`mov`) instructions.   
@@ -10,7 +16,7 @@ Say, you have the value `0xffffffa` in `rax`.
 
 How do the following two instructions differ:
 
-```
+```nasm
 mov rdi, [rax]
 lea rdi, [rax]
 ```
@@ -18,21 +24,21 @@ lea rdi, [rax]
 ### mov rdi, [rax]
 This is equivalent to,
 
-```
+```nasm
 rdi = *rax
 ```
 
 ### lea rdi, [rax]
 This is equivalent to,
 
-```
+```nasm
 rdi = rax
 ```
 
 Now, the square brackets notation, `[]` indicates that the operand is an address.
 
 We can do things like,
-```
+```nasm
 [rax + rdx]
 [rax + 4*rdx]
 [rax + 4*rdx + 5]
@@ -40,9 +46,9 @@ We can do things like,
 
 Whatever the computation, the meaning of rax and rdx does not change, whether we're doing this for `lea` or `mov`
 
-Some rascally developers might contract the following operations
+Some mischevious developers might contract the following operations
 
-```
+```nasm
 add rax, rdx
 mul rax, 4
 add rax, 5
@@ -51,12 +57,12 @@ add rax, rcx
 
 into something like this
 
-```
+```nasm
 lea rax, [rcx + 4 * rdx + 5]
 ```
 Thereby reducing the number of fetch, decode, execute steps. Furthermore, the fact that it follows a pattern of
 
-```
+```nasm
 a + 2^b * c + d
 ```
 enables it to have a more specific path than those individual circuits.

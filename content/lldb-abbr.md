@@ -1,4 +1,9 @@
-# LLDB Abbreviations
+---
+title: LLDB abbreviation reference
+date: 2024-04-18T15:10:08.057Z
+draft: false
+slug: lldb-abbr-ref
+---
 
 | Command | Description |
 |---------|-------------|

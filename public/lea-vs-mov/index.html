@@ -3,9 +3,12 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-
-
-<title> | </title>
+<link rel="stylesheet" href="/css/main.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+ </style>
+<title>lea v/s mov in x86 Assembly | </title>
 
     <link rel="stylesheet" href="/css/main.css">
 
@@ -18,19 +21,6 @@
   <header>
     <h1></h1>
 
-  <nav>
-    <ul>
-    <li>
-      <a href="/">Home</a>
-    </li>
-    <li>
-      <a href="/posts/">Posts</a>
-    </li>
-    <li>
-      <a href="/about/">About me</a>
-    </li>
-    </ul>
-  </nav>
 
 
   </header>
@@ -38,11 +28,11 @@
     
 <article>
   <header>
-    <h1></h1>
+    <h1>lea v/s mov in x86 Assembly</h1>
 
     
     
-    <time datetime="0001-01-01T00:00:00&#43;00:00">January 1, 1</time>
+    <time datetime="2024-04-18T15:10:46&#43;00:00">April 18, 2024</time>
   </header>
   <h2 id="the-dilemma">The dilemma</h2>
 <p>In x86/64 assembly intel syntax, for a long time, I&rsquo;ve been confused between the load effective address (<code>lea</code>) and move (<code>mov</code>) instructions.</p>
@@ -50,30 +40,30 @@
 <h2 id="an-example">An example</h2>
 <p>Say, you have the value <code>0xffffffa</code> in <code>rax</code>.</p>
 <p>How do the following two instructions differ:</p>
-<pre tabindex="0"><code>mov rdi, [rax]
-lea rdi, [rax]
-</code></pre><h3 id="mov-rdi-rax">mov rdi, [rax]</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#000">mov</span> <span style="color:#a90d91">rdi</span>, [<span style="color:#a90d91">rax</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000">lea</span> <span style="color:#a90d91">rdi</span>, [<span style="color:#a90d91">rax</span>]
+</span></span></code></pre></div><h3 id="mov-rdi-rax">mov rdi, [rax]</h3>
 <p>This is equivalent to,</p>
-<pre tabindex="0"><code>rdi = *rax
-</code></pre><h3 id="lea-rdi-rax">lea rdi, [rax]</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#000">rdi</span> <span style="color:#000">=</span> <span style="color:#000">*</span><span style="color:#a90d91">rax</span>
+</span></span></code></pre></div><h3 id="lea-rdi-rax">lea rdi, [rax]</h3>
 <p>This is equivalent to,</p>
-<pre tabindex="0"><code>rdi = rax
-</code></pre><p>Now, the square brackets notation, <code>[]</code> indicates that the operand is an address.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#000">rdi</span> <span style="color:#000">=</span> <span style="color:#a90d91">rax</span>
+</span></span></code></pre></div><p>Now, the square brackets notation, <code>[]</code> indicates that the operand is an address.</p>
 <p>We can do things like,</p>
-<pre tabindex="0"><code>[rax + rdx]
-[rax + 4*rdx]
-[rax + 4*rdx + 5]
-</code></pre><p>Whatever the computation, the meaning of rax and rdx does not change, whether we&rsquo;re doing this for <code>lea</code> or <code>mov</code></p>
-<p>Some rascally developers might contract the following operations</p>
-<pre tabindex="0"><code>add rax, rdx
-mul rax, 4
-add rax, 5
-add rax, rcx
-</code></pre><p>into something like this</p>
-<pre tabindex="0"><code>lea rax, [rcx + 4 * rdx + 5]
-</code></pre><p>Thereby reducing the number of fetch, decode, execute steps. Furthermore, the fact that it follows a pattern of</p>
-<pre tabindex="0"><code>a + 2^b * c + d
-</code></pre><p>enables it to have a more specific path than those individual circuits.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#000">[</span><span style="color:#000">rax</span> <span style="color:#000">+</span> <span style="color:#a90d91">rdx</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000">[</span><span style="color:#000">rax</span> <span style="color:#000">+</span> <span style="color:#1c01ce">4</span><span style="color:#000">*</span><span style="color:#a90d91">rdx</span>]
+</span></span><span style="display:flex;"><span><span style="color:#000">[</span><span style="color:#000">rax</span> <span style="color:#000">+</span> <span style="color:#1c01ce">4</span><span style="color:#000">*</span><span style="color:#a90d91">rdx</span> <span style="color:#000">+</span> <span style="color:#1c01ce">5</span>]
+</span></span></code></pre></div><p>Whatever the computation, the meaning of rax and rdx does not change, whether we&rsquo;re doing this for <code>lea</code> or <code>mov</code></p>
+<p>Some mischevious developers might contract the following operations</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#000">add</span> <span style="color:#a90d91">rax</span>, <span style="color:#a90d91">rdx</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">mul</span> <span style="color:#a90d91">rax</span>, <span style="color:#1c01ce">4</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">add</span> <span style="color:#a90d91">rax</span>, <span style="color:#1c01ce">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">add</span> <span style="color:#a90d91">rax</span>, <span style="color:#a90d91">rcx</span>
+</span></span></code></pre></div><p>into something like this</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#000">lea</span> <span style="color:#a90d91">rax</span>, [<span style="color:#a90d91">rcx</span> <span style="color:#000">+</span> <span style="color:#1c01ce">4</span> <span style="color:#000">*</span> <span style="color:#a90d91">rdx</span> <span style="color:#000">+</span> <span style="color:#1c01ce">5</span>]
+</span></span></code></pre></div><p>Thereby reducing the number of fetch, decode, execute steps. Furthermore, the fact that it follows a pattern of</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-nasm" data-lang="nasm"><span style="display:flex;"><span><span style="color:#000">a</span> <span style="color:#000">+</span> <span style="color:#1c01ce">2</span><span style="color:#000">^</span><span style="color:#000">b</span> <span style="color:#000">*</span> <span style="color:#000">c</span> <span style="color:#000">+</span> <span style="color:#000">d</span>
+</span></span></code></pre></div><p>enables it to have a more specific path than those individual circuits.</p>
 <p>The fact that lea has its own circuitry means that it can be run in parallel with integer circuitry.</p>
 <h2 id="the-logic-still-stands">The logic still stands</h2>
 <p>Even though we&rsquo;re gaining all of these advantages, at its root, the lea instruction is computing a value, and storing that value in a register. The mechanism was designed for computing values, but there&rsquo;s no sense of a &rsquo;type&rsquo; here. Any value computed inside the square brackets is considered an address, and lea simply stores that value &ndash; it loads the effective &lsquo;address&rsquo; in the source operand.</p>

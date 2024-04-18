@@ -1,9 +1,10 @@
 {{ define "main" }}
-  <h1>Welcome to My Blog</h1>
+  <h1>Blog</h1>
   {{ range .Pages }}
     <article>
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      <p>{{ .Summary }}</p>
+      <div style="opacity: 0.6">{{ .Content | truncate 200 }}      <a href="{{ .RelPermalink }}"><br>read more...</a></div>
+
     </article>
   {{ end }}
 {{ end }}

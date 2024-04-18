@@ -1,3 +1,9 @@
+---
+title: Mem read in x86 Assembly
+slug: mem-read
+draft: false
+date: 2024-04-18T15:07:36.885Z
+---
 You have to initialise mem read with an address.
 
 ```

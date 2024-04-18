@@ -1,21 +1,8 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://bharatagarwal.io/blog/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
-
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
-
-[[menus.main]]
-name = 'About me'
-pageRef = '/about'
-weight = 30
+title = 'Blog'
+canonifyURLs = false
+enableEmoji = true
 
 [module]
   [module.hugoVersion]

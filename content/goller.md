@@ -1,4 +1,10 @@
-# How to slay interviews and not be slain by them
++++
+title = "How to slay interviews and not be slain by them."
+date = "2024-04-18T11:55:47.415Z"
+draft = false
+slug = "slay-interviews"
++++
+
 
 Even though you might have your issues with whiteboard/ds-algo interviews, they are inevitable.
 
@@ -136,7 +142,7 @@ Choose most comfortable.
 
 ## Logging
 
-```python
+```python3
 import logging
 
 FORMAT = "[%(filename)s:%(lineno)s - %(funcName)10s() ] %(message)s"
@@ -151,7 +157,7 @@ some_test_function()
 ```
 will output:
 
-```plaintext
+```
 [test.py:8 - some_test_function() ] This is a test message
 ```
 

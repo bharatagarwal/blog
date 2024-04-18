@@ -17,7 +17,6 @@ Even though you might have your issues with whiteboard/ds-algo interviews, they 
 - requires special knowledge -- you will fail most interviews if you haven't learned the material sufficiently
 - required practice -- several months typically
 - will be uncomfortable -- confront discomfort head on
-
 - Failing is a rite of passage
 - Interviewers typically expect you to fail -- it's just statistically likely
 

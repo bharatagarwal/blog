@@ -41,7 +41,7 @@
       <link>//localhost:1313/math/</link>
       <pubDate>Thu, 18 Apr 2024 15:09:17 +0000</pubDate>
       <guid>//localhost:1313/math/</guid>
-      <description>I&amp;rsquo;ve always been a little scared of mathematical notations. They feel like symbols from an alien intelligence that is smarter than human.&#xA;Every time I see a summation formula, I feel dumb. I&amp;rsquo;ve been trying to study data structures and algorithms as an academic topic, something that can stimulate the mind. To do that, things have come to a head &amp;ndash; either I learn to be comfortable speaking mathematically, or I&amp;rsquo;m forever in the &amp;lsquo;do this to get a job and it&#39;s enough&amp;rsquo; camp.</description>
+      <description>I&amp;rsquo;ve always been a little scared of mathematical notation. They feel like symbols from an alien intelligence that is smarter than human.&#xA;Every time I see a summation formula, I feel dumb. I&amp;rsquo;ve been trying to study data structures and algorithms as an academic topic, something that can stimulate the mind.&#xA;To do that, things have come to a head &amp;ndash; either I learn to be comfortable speaking mathematically, or I&amp;rsquo;m forever in the do this to get a job and it&amp;rsquo;s enough camp.</description>
     </item>
     <item>
       <title>Mem read in x86 Assembly</title>
@@ -90,7 +90,7 @@
       <link>//localhost:1313/slay-interviews/</link>
       <pubDate>Thu, 18 Apr 2024 11:55:47 +0000</pubDate>
       <guid>//localhost:1313/slay-interviews/</guid>
-      <description>Even though you might have your issues with whiteboard/ds-algo interviews, they are inevitable.&#xA;The only way out is through the belly of the beast, so cry havoc and let slip the dogs of whiteboard.&#xA;Interviewing: is distinct from being a good engineer&#xA;is learnable &amp;ndash; no one starts off being amazing&#xA;requires special knowledge &amp;ndash; you will fail most interviews if you haven&amp;rsquo;t learned the material sufficiently&#xA;required practice &amp;ndash; several months typically</description>
+      <description>Even though you might have your issues with whiteboard/ds-algo interviews, they are inevitable.&#xA;The only way out is through the belly of the beast, so cry havoc and let slip the dogs of whiteboard.&#xA;Interviewing: is distinct from being a good engineer is learnable &amp;ndash; no one starts off being amazing requires special knowledge &amp;ndash; you will fail most interviews if you haven&amp;rsquo;t learned the material sufficiently required practice &amp;ndash; several months typically will be uncomfortable &amp;ndash; confront discomfort head on Failing is a rite of passage Interviewers typically expect you to fail &amp;ndash; it&amp;rsquo;s just statistically likely Prep Read Algorithm Design Manual Watch lectures 130 leetcode problems (mostly medium), 5-10 programming contests, handful of random problems Usually takes 2-3 months</description>
     </item>
   </channel>
 </rss>
